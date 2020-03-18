@@ -1,0 +1,39 @@
+14.03.2020
+
+1. activity de bienvenida
+
+- pantalla con logo de la app y nombre
+- opcion de crear user y/o login: nro de cel? o email? o ambas?
+
+2. activity de busqueda y mapa
+
+- arriba un barra de busqueda tipo header
+- en la pantalla un mapa con los negocios cerca
+
+2a. la busqueda es por producto, y devuelve el o los locales mas cercanos 
+	con los precios de cada local
+	habra q ver de poner un FILTRO para local o precio
+	y que aparezca o los precios de menor a mayor y el local con un 
+	enlace a que lo muestre en el mapa
+	o
+	que muestre el local MAS CERCANO con lo mismo
+
+	*en esto habria que contemplar los horarios de cada local
+
+	*Tambien se podria utilizar google maps para localizar precios en otra
+	ciudad. dado que para mostrar lo primero utilizaria la ubicacion de 
+	cel del user.
+
+
+2b. canasta de productos
+
+	esta opcion tendria que estar en el header de busqueda y que vaya a otra
+	pantalla donde seleccionar los productos a agregar.
+
+	Luego una opcion buscar que haga lo ya descripto en el punto 2a.
+
+BASE DE DATOS
+
+no veo mucho objeto en hacer una categoria para cada producto, pero en caso
+de que se haga tendria q ser, comestibles, bebidas, kiosco, etc
+
