@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.178" />
 
     <EditText
-        android:id="@+id/userOmailInput"
+        android:id="@+id/EdtUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -34,7 +34,7 @@
         android:autofillHints="" />
 
     <EditText
-        android:id="@+id/passwordInput"
+        android:id="@+id/EdtPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -44,11 +44,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userOmailInput"
+        app:layout_constraintTop_toBottomOf="@+id/EdtUser"
         app:layout_constraintVertical_bias="0.04" />
 
     <RadioButton
-        android:id="@+id/personRadioBtn"
+        android:id="@+id/RbPerson"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/personLog"
@@ -56,11 +56,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordInput"
+        app:layout_constraintTop_toBottomOf="@+id/EdtPass"
         app:layout_constraintVertical_bias="0.048" />
 
     <RadioButton
-        android:id="@+id/enterpriseRadioBtn"
+        android:id="@+id/RbEnterprise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/enterpriseLog"
@@ -68,7 +68,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordInput"
+        app:layout_constraintTop_toBottomOf="@+id/EdtPass"
         app:layout_constraintVertical_bias="0.207" />
 
     <TextView
@@ -78,13 +78,13 @@
         android:text="@string/createUser1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.35"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterpriseRadioBtn"
+        app:layout_constraintTop_toBottomOf="@+id/RbEnterprise"
         app:layout_constraintVertical_bias="0.062" />
 
     <TextView
-        android:id="@+id/createUser2Text"
+        android:id="@+id/LbCreate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -93,15 +93,16 @@
         android:text="@string/createUser2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.63"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterpriseRadioBtn"
+        app:layout_constraintTop_toBottomOf="@+id/RbEnterprise"
         app:layout_constraintVertical_bias="0.062" />
 
     <Button
-        android:id="@+id/noUserBtn"
+        android:id="@+id/BtnLog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="ingreso"
         android:text="@string/noUser"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
