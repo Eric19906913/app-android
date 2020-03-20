@@ -1,0 +1,20 @@
+#403d98 ->azul oscuro -> background
+rgb(64, 61, 152)
+
+30% ->azul oscuro darker	
+#2E2C6D	
+rgb(46, 44, 109)
+
+#dfe58d -> verde limonoso -> text
+rgb (223, 229, 141)
+
+60% -> verde limonoso darker 	
+#d1d959	
+rgb(209, 217, 89)
+
+blanco para text
+#ffffff
+
+
+#ebb2b8 -> prosa
+#ef7987 -> prosa osculo
