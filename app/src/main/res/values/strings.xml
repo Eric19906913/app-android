@@ -2,7 +2,7 @@
     <string name="app_name">Agora</string>
     <string name="login">Agora</string>
     <string name="userOmail">Usuario o E-mail</string>
-    <string name="password">Constraseña</string>
+    <string name="password">Contraseña</string>
     <string name="personLog">Ingresar como persona</string>
     <string name="enterpriseLog">Ingresar como empresa</string>
     <string name="createUser1">No tienes usuario,</string>
