@@ -27,11 +27,25 @@ public class MainActivity extends AppCompatActivity {
 
     public void ingreso(View view) {
         String nombre = EdtUser.getText().toString();
-        if(!nombre.isEmpty()){
-            Toast.makeText(this,"Prueba de que muestre el nombre: "+nombre,Toast.LENGTH_LONG).show();
+        String pass = EdtPass.getText().toString();
+        Boolean opcion;
+        if(CheckBoxEnterprise.isChecked()){
+            opcion = true;
         }else{
-            Toast.makeText(this,"No ingreso nombre",Toast.LENGTH_LONG).show();
+            opcion = false;
         }
+        if(!nombre.isEmpty() && !pass.isEmpty()){
+            if(opcion){
+                Toast.makeText(this,"Ingreso correcto de empresa",Toast.LENGTH_SHORT).show();
+            }else {
+                Toast.makeText(this, "Ingreso correcto de usuario", Toast.LENGTH_SHORT).show();
+            }
+        }else{
+            Toast.makeText(this,"No ingresó sus datos",Toast.LENGTH_SHORT).show();
+        }
+    }
 
+    public void registrar(View view) {
+        Toast.makeText(this, "Ingresando en registrar",Toast.LENGTH_SHORT).show();
     }
 }
