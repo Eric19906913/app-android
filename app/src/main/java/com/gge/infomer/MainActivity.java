@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void ingreso(View view) {
-        String nombre = EdtUser.toString();
+        String nombre = EdtUser.getText().toString();
         if(!nombre.isEmpty()){
-            Toast.makeText(this,nombre,Toast.LENGTH_LONG);
+            Toast.makeText(this,"Prueba de que muestre el nombre: "+nombre,Toast.LENGTH_LONG).show();
         }else{
-            Toast.makeText(this,"No ingreso nombre",Toast.LENGTH_LONG);
+            Toast.makeText(this,"No ingreso nombre",Toast.LENGTH_LONG).show();
         }
 
     }
