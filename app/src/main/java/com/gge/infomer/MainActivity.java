@@ -5,14 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText EdtUser, EdtPass;
     Button BtnLog;
-    RadioButton RbPerson, RbEnter;
+    CheckBox CheckBoxEnterprise;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +21,7 @@ public class MainActivity extends AppCompatActivity {
         EdtUser = (EditText) findViewById(R.id.EdtUser);
         EdtPass = (EditText) findViewById(R.id.EdtPass);
         BtnLog = (Button) findViewById(R.id.BtnLog);
-        RbPerson = (RadioButton) findViewById(R.id.RbPerson);
-        RbEnter = (RadioButton) findViewById(R.id.RbEnterprise);
+        CheckBoxEnterprise = (CheckBox) findViewById(R.id.checkBoxLogEnterprise);
     }
 
 

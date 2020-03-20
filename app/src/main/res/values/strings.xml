@@ -6,6 +6,6 @@
     <string name="personLog">Ingresar como persona</string>
     <string name="enterpriseLog">Ingresar como empresa</string>
     <string name="createUser1">No tienes usuario,</string>
-    <string name="createUser2">registrate!</string>
+    <string name="createUser2">&#160; registrate!</string>
     <string name="noUser">Ingresar</string>
 </resources>
