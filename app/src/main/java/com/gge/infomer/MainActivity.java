@@ -27,10 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void ingreso(View view) {
-        String nombre = EdtUser.getText().toString();
-        String pass = EdtPass.getText().toString();
+        String nombre = EdtUser.getText().toString(); //obtengo el nombre de usuario
+        String pass = EdtPass.getText().toString(); //obtengo la pass del user
         Boolean opcion;
-        Intent intent;
         if(CheckBoxEnterprise.isChecked()){
             opcion = true;
         }else{
@@ -39,7 +38,14 @@ public class MainActivity extends AppCompatActivity {
         if(!nombre.isEmpty() && !pass.isEmpty()){
             if(opcion){
                 Toast.makeText(this,"Ingreso correcto de empresa",Toast.LENGTH_SHORT).show();
-                intent = new Intent(MainActivity.this, EnterpriseActivity.class);
+                Intent intent = new Intent(MainActivity.this, EnterpriseActivity.class);
+
+                Bundle datos = new Bundle(); //creo un bundle
+                datos.putString("nombre",nombre); // agrego el nombre recibido al bundle
+
+                intent.putExtras(datos); //agrego el bundle al intent
+
+                startActivity(intent); //cambia de activity y mando el intent
             }else {
                 Toast.makeText(this, "Ingreso correcto de usuario", Toast.LENGTH_SHORT).show();
             }
