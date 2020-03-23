@@ -29,43 +29,28 @@ public class MainActivity extends AppCompatActivity {
     public void ingreso(View view) {
         String nombre = EdtUser.getText().toString(); //obtengo el nombre de usuario
         String pass = EdtPass.getText().toString(); //obtengo la pass del user
-        Boolean opcion; //es uso de esta variable es MALA LOGICA por lo canceric y redundante... eso me dijo martin JAJAJJAJA
+        Boolean opcion;
         if(CheckBoxEnterprise.isChecked()){
             opcion = true;
-
-            if(!nombre.isEmpty() && !pass.isEmpty()){
-                if(opcion){
-                    Toast.makeText(this,"Ingreso correcto de empresa",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, EnterpriseActivity.class);
-
-                    Bundle datos = new Bundle(); //creo un bundle
-                    datos.putString("nombre",nombre); // agrego el nombre recibido al bundle
-
-                    intent.putExtras(datos); //agrego el bundle al intent
-
-                    startActivity(intent); //cambia de activity y mando el intent
-                }else {
-                    Toast.makeText(this, "Ingreso incorrecto de Empresa", Toast.LENGTH_SHORT).show();
-                }
-            }else{
-                Toast.makeText(this,"No ingresó sus datos",Toast.LENGTH_SHORT).show();
-            }
-
-        }else if(!CheckBoxEnterprise.isChecked()) {
-
-            if (!nombre.isEmpty() && !pass.isEmpty()) {
-                Toast.makeText(this, "Ingreso correcto de Usuario", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, UserNavDrawActivity.class);
+        }else{
+            opcion = false;
+        }
+        if(!nombre.isEmpty() && !pass.isEmpty()){
+            if(opcion){
+                Toast.makeText(this,"Ingreso correcto de empresa",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, EnterpriseActivity.class);
 
                 Bundle datos = new Bundle(); //creo un bundle
-                datos.putString("Nombre", nombre); // agrego el nombre recibido al bundle
+                datos.putString("nombre",nombre); // agrego el nombre recibido al bundle
 
                 intent.putExtras(datos); //agrego el bundle al intent
 
                 startActivity(intent); //cambia de activity y mando el intent
-            } else {
-                Toast.makeText(this, "No ingresó sus datos", Toast.LENGTH_SHORT).show();
+            }else {
+                Toast.makeText(this, "Ingreso correcto de usuario", Toast.LENGTH_SHORT).show();
             }
+        }else{
+            Toast.makeText(this,"No ingresó sus datos",Toast.LENGTH_SHORT).show();
         }
     }
 
