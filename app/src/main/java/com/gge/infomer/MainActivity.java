@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if(!nombre.isEmpty() && !pass.isEmpty()){
             if(opcion){
-                Toast.makeText(this,"Ingreso correcto de empresa",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"Ingreso correcto de Empresa",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, EnterpriseActivity.class);
 
                 Bundle datos = new Bundle(); //creo un bundle
@@ -47,14 +47,23 @@ public class MainActivity extends AppCompatActivity {
 
                 startActivity(intent); //cambia de activity y mando el intent
             }else {
-                Toast.makeText(this, "Ingreso correcto de usuario", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Ingreso correcto de Usuario", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(MainActivity.this, UserNavDrawActivity.class);
+
+                Bundle datos = new Bundle(); //creo un bundle
+                datos.putString("nombre",nombre); // agrego el nombre recibido al bundle
+
+                intent.putExtras(datos); //agrego el bundle al intent
+
+                startActivity(intent); //cambia de activity y mando el intent
             }
         }else{
-            Toast.makeText(this,"No ingresó sus datos",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Ingrese sus datos",Toast.LENGTH_SHORT).show();
         }
     }
 
     public void registrar(View view) {
-        Toast.makeText(this, "Ingresando en registrar",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Ingrese en Registrar",Toast.LENGTH_SHORT).show();
     }
 }
