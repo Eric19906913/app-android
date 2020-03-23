@@ -21,6 +21,8 @@ public class UserNavDrawActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //NO SE XQ DA ESTE ERROR SI ESTA CORRECTO Y ENCIMA ANDA EN EL EMULADOR
         setContentView(R.layout.activity_user_nav_draw2);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
