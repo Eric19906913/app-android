@@ -5,8 +5,7 @@
     <string name="password">Contraseña</string>
     <string name="personLog">Ingresar como persona</string>
     <string name="enterpriseLog">Ingresar como empresa</string>
-    <string name="createUser1">No tienes usuario,</string>
-    <string name="createUser2">&#160; registrate!</string>
+    <string name="createUser">No tienes usuario, registrate!</string>
     <string name="noUser">Ingresar</string>
     <string name="title_activity_enterprise">EnterpriseActivity</string>
     <string name="Enterprise">Empresa</string>
@@ -30,6 +29,15 @@
 
     <string name="home_second">Home Second</string>
     <string name="mensaje_reg">Registrate como usuario, es gratis!</string>
-    <string name="mensaje_ente">Registrarse como empresa</string>
+
+    <string name="register">Registrarse</string>
+    <string name="register_name">Nombre</string>
+    <string name="register_lastname">Apellido</string>
+    <string name="register_email">E-Mail</string>
+    <string name="register_password">Contraseña</string>
+    <string name="register_password2">Confirmar Contraseña</string>
+    <string name="register_btn_cancel">Cancelar</string>
+    <string name="register_btn_accept">Aceptar</string>
+    <string name="register_enterprise">Registrate como Empresa!!!</string>
 
 </resources>
