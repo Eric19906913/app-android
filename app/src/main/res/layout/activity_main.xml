@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/enterRegister"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
+    app:layout_constraintHorizontal_bias="0.46"
     tools:context=".MainActivity">
 
     <EditText
@@ -13,97 +14,100 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints=""
+        android:backgroundTint="@color/primary_text"
         android:ems="10"
         android:hint="@string/userOmail"
         android:inputType="textPersonName"
         android:singleLine="true"
         android:textColor="@color/primary_text"
         android:textColorHint="@color/secondary_text"
-        android:backgroundTint="@color/primary_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:layout_constraintVertical_bias="0.069" tools:targetApi="lollipop"/>
+        app:layout_constraintVertical_bias="0.0"
+        tools:targetApi="lollipop" />
 
     <EditText
         android:id="@+id/EdtPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_text"
         android:ems="10"
         android:hint="@string/password"
         android:importantForAutofill="no"
         android:inputType="textPassword"
         android:textColor="@color/primary_text"
         android:textColorHint="@color/secondary_text"
-        android:backgroundTint="@color/primary_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EdtUser"
-        app:layout_constraintVertical_bias="0.04" tools:targetApi="lollipop"/>
+        app:layout_constraintVertical_bias="0.04"
+        tools:targetApi="lollipop" />
 
     <TextView
         android:id="@+id/LbCreate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="128dp"
-        android:layout_marginRight="128dp"
         android:clickable="true"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:onClick="registrar"
         android:text="@string/createUser"
         android:textColor="@color/primary_text"
-        app:layout_constraintBottom_toTopOf="@+id/BtnLog"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxLogEnterprise"
-        app:layout_constraintVertical_bias="0.007" />
+        app:layout_constraintVertical_bias="0.028" />
 
     <Button
         android:id="@+id/BtnLog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="160dp"
         android:background="@color/lemon_background"
         android:onClick="ingreso"
         android:text="@string/noUser"
         android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxLogEnterprise"
-        app:layout_constraintVertical_bias="0.653" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.796"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
 
     <CheckBox
         android:id="@+id/checkBoxLogEnterprise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/enterpriseLog"
-        android:textColor="@color/secondary_text"
         android:backgroundTint="@color/primary_text"
         android:buttonTint="@color/secondary_text"
+        android:text="@string/enterpriseLog"
+        android:textColor="@color/secondary_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EdtPass"
-        app:layout_constraintVertical_bias="0.049" tools:targetApi="lollipop"/>
+        app:layout_constraintVertical_bias="0.049"
+        tools:targetApi="lollipop" />
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="181dp"
-        android:layout_height="123dp"
-        android:layout_marginTop="90dp"
+        android:layout_width="259dp"
+        android:layout_height="206dp"
         android:contentDescription="@string/login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.05"
         app:srcCompat="@drawable/agoralogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
