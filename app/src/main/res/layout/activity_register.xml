@@ -156,12 +156,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPassword"
                     android:hint="@string/register_password2"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
                     android:textColor="@color/primary_text"
                     android:textColorHint="@color/secondary_text"
-                    app:backgroundTint="@color/secondary_text"
-                    android:importantForAutofill="no"/>
+                    app:backgroundTint="@color/secondary_text" />
             </TableRow>
 
             <TableRow
@@ -170,7 +170,7 @@
 
                 <Space
                     android:layout_width="wrap_content"
-                    android:layout_height="48sp" />
+                    android:layout_height="52sp" />
             </TableRow>
 
             <TableRow
@@ -184,7 +184,7 @@
                     android:orientation="horizontal" />
 
                 <Space
-                    android:layout_width="50sp"
+                    android:layout_width="95sp"
                     android:layout_height="wrap_content" />
 
                 <Button
@@ -196,7 +196,7 @@
                     android:textColor="@color/colorPrimaryDark" />
 
                 <Space
-                    android:layout_width="120sp"
+                    android:layout_width="40dp"
                     android:layout_height="wrap_content" />
 
                 <Button
